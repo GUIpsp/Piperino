@@ -1,0 +1,16 @@
+[
+{
+  "modid": "piperino",
+  "name": "Piperino",
+  "description": "A logisticspipes clone.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authors": ["GUIpsp", "Hanse00"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
