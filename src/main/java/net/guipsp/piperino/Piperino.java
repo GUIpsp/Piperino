@@ -26,7 +26,7 @@ public class Piperino {
 
     @EventHandler
     public void init(FMLInitializationEvent event) {
-
+        ModBlock.initTileEntities();
     }
 
     @EventHandler
