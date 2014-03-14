@@ -5,6 +5,7 @@
 eclipse
 
 #Ignore IntelliJ IDEA files
+.idea
 *.iml
 *.ipr
 *.iws
@@ -17,7 +18,6 @@ build
 bin
 
 #Ignore mc working directory.
-
 run
 
 #Ignore gradle logs
