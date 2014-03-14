@@ -17,6 +17,11 @@ buildscript {
 
 apply plugin: 'forge'
 
+dependencies {
+    compile 'org.projectlombok:lombok:1.12.6'
+}
+
+
 version = "1.0"
 group= "piperino" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "Piperino"
