@@ -9,17 +9,17 @@ import org.lwjgl.opengl.GL11;
 
 //TODO: Empty Renderer
 public class TileEntityPipeRenderer extends TileEntitySpecialRenderer {
-	private static final ResourceLocation texture = new ResourceLocation(ModInfo.ID, "textures/blocks/pipe.png");
-	ModelPipe modelPipe = new ModelPipe();
+    private static final ResourceLocation texture = new ResourceLocation(ModInfo.ID, "textures/blocks/pipe.png");
+    static ModelPipe modelPipe = new ModelPipe();
 
-	@Override
-	public void renderTileEntityAt(TileEntity tileEntity, double x, double y, double z, float tick) {
-		GL11.glPushMatrix();
-		GL11.glTranslated(x, y, z);
-		bindTexture(texture);
+    @Override
+    public void renderTileEntityAt(TileEntity tileEntity, double x, double y, double z, float tick) {
+        GL11.glPushMatrix();
+        GL11.glTranslated(x, y, z);
+        bindTexture(texture);
 
-		modelPipe.base.render(0.5f);
+        modelPipe.base.render(0.0625f);
 
-		GL11.glPopMatrix();
-	}
+        GL11.glPopMatrix();
+    }
 }
