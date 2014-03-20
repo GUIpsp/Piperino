@@ -21,28 +21,28 @@ public class BlockPipe extends BlockContainer {
         return new TileEntityPipe();
     }
 
-	@Override
-	public int getRenderType() {
-		return -1;
-	}
+    @Override
+    public int getRenderType() {
+        return -1;
+    }
 
-	@Override
-	public boolean renderAsNormalBlock() {
-		return false;
-	}
+    @Override
+    public boolean renderAsNormalBlock() {
+        return false;
+    }
 
-	@Override
-	public boolean isBlockNormalCube() {
-		return false;
-	}
+    @Override
+    public boolean isBlockNormalCube() {
+        return false;
+    }
 
-	@Override
-	public boolean isOpaqueCube() {
-		return false;
-	}
+    @Override
+    public boolean isOpaqueCube() {
+        return false;
+    }
 
-	@Override
-	public boolean isBlockSolid(IBlockAccess blockAccess, int x, int y, int z, int side) {
-		return false;
-	}
+    @Override
+    public boolean isBlockSolid(IBlockAccess blockAccess, int x, int y, int z, int side) {
+        return false;
+    }
 }

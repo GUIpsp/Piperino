@@ -21,11 +21,11 @@ public class Piperino {
     @Instance(ModInfo.ID)
     public static Piperino instance;
 
-	@SidedProxy(modId = ModInfo.ID, clientSide = "net.guipsp.piperino.proxy.ClientProxy",
-			serverSide = "net.guipsp.piperino.proxy.CommonProxy")
-	public static CommonProxy proxy;
+    @SidedProxy(modId = ModInfo.ID, clientSide = "net.guipsp.piperino.proxy.ClientProxy",
+            serverSide = "net.guipsp.piperino.proxy.CommonProxy")
+    public static CommonProxy proxy;
 
-	@EventHandler
+    @EventHandler
     public void preInit(FMLPreInitializationEvent event) {
         ModBlock.init();
     }
@@ -34,7 +34,7 @@ public class Piperino {
     public void init(FMLInitializationEvent event) {
         ModBlock.initTileEntities();
 
-	    proxy.registerRenderer();
+        proxy.registerRenderer();
     }
 
     @EventHandler
